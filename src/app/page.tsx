@@ -1,8 +1,8 @@
 import Head from "next/head";
-import Image from "next/image";
 import { AiFillLinkedin, AiFillTwitterCircle } from "react-icons/ai";
 import { MdOutlineEngineering } from "react-icons/md";
 import { FaUpwork } from "react-icons/fa6";
+import { FaWhatsapp } from "react-icons/fa6";
 
 export default function Home() {
   return (
@@ -16,7 +16,7 @@ export default function Home() {
         <nav className="py-10 mb-12 flex justify-between">
           <h1 className=" text-xl">Portfolio</h1>
           <ul className=" flex items-center">
-            <MdOutlineEngineering className="cursor-pointer text-3xl "/> {/* TODO: make this size variable depending the device */}
+            <MdOutlineEngineering className="text-3xl "/> {/* TODO: make this size variable depending the device */}
             <li>
               <a href="#" className="bg-gradient-to-r from-blue-600 to-blue-400 text-white px-4 py-2 border-none rounded-md ml-8">
                 Resume
@@ -35,9 +35,16 @@ export default function Home() {
         Background in corporate and freelance work, specializing in full-stack development. With expertise in agile methodologies and application deployment, I excel in delivering efficient and scalable solutions
         </p>
       </div>
-      <div>
-        <AiFillLinkedin />
-        <FaUpwork/>
+      <div className="text-5xl flex justify-center gap-16">
+        <a href="https://www.linkedin.com/in/joaquin-fioriti-a2ba89197/" target="_blank" rel="noopener noreferrer">
+          <AiFillLinkedin/>
+        </a>
+        <a href="https://www.upwork.com/freelancers/~01eb2607a3760fc756" target="_blank" rel="noopener noreferrer">
+        <FaUpwork className="cursor-pointer"/>
+        </a>
+        <a href="https://wa.me/15551234567" target="_blank" rel="noopener noreferrer">
+        <FaWhatsapp className="cursor-pointer"/>
+        </a>
       </div>
       </section>
       </main>
