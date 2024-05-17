@@ -15,7 +15,7 @@ export default function Home() {
         <meta name="description" content="Joaquin Fioriti Software Engineer porfolio"/> 
       </Head>
       <main className="bg-white px-10 bg-gradient-to-br from-blue-400 to-amber-200">
-      <section className="h-screen ">
+      <section>
         <nav className="py-10 mb-12 flex justify-between">
           <h1 className=" text-xl">Portfolio</h1>
           <ul className=" flex items-center">
@@ -50,7 +50,7 @@ export default function Home() {
         </a>
       </div>
       <section className="flex justify-center">
-        <Container/>
+        <Container />
       </section>
       </section>
       </main>
