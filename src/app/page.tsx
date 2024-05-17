@@ -9,14 +9,14 @@ import Container from "@/components/Container";
 
 export default function Home() {
   return (
-    <div className="bg-gradient-to-br from-blue-400 to-amber-200">
+    <div className="bg-gradient-to-br from-blue-400 to-amber-200 min-h-screen">
       <Head>
         <title>Joaquin Fioriti</title>
         <meta name="description" content="Joaquin Fioriti Software Engineer porfolio"/> 
       </Head>
-      <main className="bg-white px-10 bg-gradient-to-br from-blue-400 to-amber-200">
+      <main >
       <section>
-        <nav className="py-10 mb-12 flex justify-between">
+        <nav className="py-10 mb-12 flex justify-between px-3">
           <h1 className=" text-xl">Portfolio</h1>
           <ul className=" flex items-center">
             <MdOutlineEngineering className="text-3xl "/> {/* TODO: make this size variable depending the device */}
