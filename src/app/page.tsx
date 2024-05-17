@@ -1,3 +1,4 @@
+
 import Head from "next/head";
 import { AiFillLinkedin, AiFillTwitterCircle } from "react-icons/ai";
 import { MdOutlineEngineering } from "react-icons/md";
@@ -5,9 +6,6 @@ import { FaUpwork } from "react-icons/fa6";
 import { FaWhatsapp } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import Container from "@/components/Container";
-import pdf from "./CV_FioritiJoaquin.pdf"
-
-
 
 
 
@@ -24,7 +22,7 @@ export default function Home() {
           <h1 className=" text-xl">Portfolio</h1>
           <ul className=" flex items-center">
             <MdOutlineEngineering className="text-3xl "/> {/* TODO: make this size variable depending the device */}
-            <li className="hover:scale-125 transition">
+            <li className="hover:scale-125 transition" >
               <a href="#" className="bg-gradient-to-r from-blue-600 to-blue-400 text-white px-4 py-2 border-none rounded-md ml-8">
                 Resume
               </a>
