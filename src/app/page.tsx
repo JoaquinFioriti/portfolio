@@ -5,6 +5,10 @@ import { FaUpwork } from "react-icons/fa6";
 import { FaWhatsapp } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import Container from "@/components/Container";
+import pdf from "./CV_FioritiJoaquin.pdf"
+
+
+
 
 
 export default function Home() {
