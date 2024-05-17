@@ -8,6 +8,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        pulseScale: {
+          '0%, 100%': { transform: 'scale(1)' }, //TODO: When the mouse is on hover increase the size and when you 
+          '50%': { transform: 'scale(1.02)' },
+        },
+      },
+      animation: {
+        pulseScale: 'pulseScale 2s ease-in-out infinite',
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
