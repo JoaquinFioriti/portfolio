@@ -33,6 +33,7 @@ const Container: FC<ContainerProps> = ({className}) => {
             <Project 
                 className='p-4 w-1/2 flex flex-col items-center border rounded-3xl bg-emerald-100 bg-opacity-15 hover:animate-pulseScale cursor-pointer' 
                 title='Backtesting Trading' 
+                text='BacktestPro offers a comprehensive backtesting service for trading strategies using the backtesting.py library. Clients can visualize their chosen indicators and simulate buy and sell actions over a selected time period and asset. At the end of the process, a detailed report with various statistics is provided.'
                 image=
                     {<Image 
                         alt='Te chiflo' 
@@ -44,6 +45,7 @@ const Container: FC<ContainerProps> = ({className}) => {
             <Project 
                 className='p-4 w-1/2 flex flex-col items-center border rounded-3xl bg-emerald-100 bg-opacity-15 hover:animate-pulseScale cursor-pointer' 
                 title='Software Company' 
+                text='I worked for two years as a full stack developer at Hexacta (a GlobalLogic Company), where I contributed to two projects. I collaborated with a team using agile methodologies to deliver high-quality solutions.'
                 image=
                     {<Image 
                         alt='Te chiflo' 
