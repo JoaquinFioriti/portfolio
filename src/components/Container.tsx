@@ -11,6 +11,14 @@ import { DiMongodb } from 'react-icons/di'
 import { FaPython } from 'react-icons/fa6'
 import { SiPandas } from 'react-icons/si'
 import { SiTensorflow } from 'react-icons/si'
+import { SiTypescript } from 'react-icons/si'
+import { DiJava } from 'react-icons/di'
+import { SiSpringboot } from 'react-icons/si'
+import { DiMysql } from 'react-icons/di'
+import { DiDocker } from 'react-icons/di'
+import { SiAzuredevops } from 'react-icons/si'
+import { DiDigitalOcean } from 'react-icons/di'
+import { DiGoogleCloudPlatform } from 'react-icons/di'
 
 
 interface ContainerProps {
@@ -40,7 +48,7 @@ const Container: FC<ContainerProps> = ({className}) => {
                         className='rounded-3xl  cursor-pointer'/>
                     </a>
                     }
-                tecnologies={[{name:'React',icon: <FaReact className='size-7'/>},{name:'NodeJS',icon: <FaNode className='size-7'/>},{name:'MongoDB',icon: <DiMongodb className='size-7'/>},{name:'Python',icon: <FaPython className='size-7'/>}, {name:'TensorFlow',icon: <SiTensorflow className='size-7'/>}]}
+                tecnologies={[{name:'React',icon: <FaReact className='size-7'/>},{name:'NodeJS',icon: <FaNode className='size-7'/>},{name:'MongoDB',icon: <DiMongodb className='size-7'/>},{name:'Python',icon: <FaPython className='size-7'/>}, {name:'TensorFlow',icon: <SiTensorflow className='size-7'/>}, {name:'Docker',icon: <DiDocker className='size-7'/>}, {name:'DigitalOcean',icon: <DiDigitalOcean className='size-7'/>},  {name:'GoogleCloudRun',icon: <DiGoogleCloudPlatform className='size-7'/>}]}
             />
             <Project 
                 className='p-4 w-1/2 flex flex-col items-center rounded-3xl bg-emerald-100 bg-opacity-15 hover:animate-pulseScale' 
@@ -71,7 +79,7 @@ const Container: FC<ContainerProps> = ({className}) => {
                         className='rounded-3xl'/>
                     </a>
                     }
-                tecnologies={[{name:'React',icon: <FaReact className='size-7'/>},{name:'NodeJS',icon: <FaNode className='size-7'/>},{name:'MongoDB',icon: <DiMongodb className='size-7'/>}]}
+                tecnologies={[{name:'Typescript',icon: <SiTypescript className='size-7'/>},{name:'Java',icon: <DiJava className='size-7'/>},{name:'MySQL',icon: <DiMysql className='size-7'/>}, {name:'AzureDevops',icon: <SiAzuredevops className='size-7'/>}]}
             />
         </div>
         </div>
