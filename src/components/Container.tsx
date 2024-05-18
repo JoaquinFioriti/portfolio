@@ -51,7 +51,7 @@ const Container: FC<ContainerProps> = ({className}) => {
                 tecnologies={[{name:'React',icon: <FaReact className='size-7'/>},{name:'NodeJS',icon: <FaNode className='size-7'/>},{name:'MongoDB',icon: <DiMongodb className='size-7'/>},{name:'Python',icon: <FaPython className='size-7'/>}, {name:'TensorFlow',icon: <SiTensorflow className='size-7'/>}, {name:'Docker',icon: <DiDocker className='size-7'/>}, {name:'DigitalOcean',icon: <DiDigitalOcean className='size-7'/>},  {name:'GoogleCloudRun',icon: <DiGoogleCloudPlatform className='size-7'/>}]}
             />
             <Project 
-                className='p-4 w-1/2 flex flex-col items-center rounded-3xl bg-emerald-100 bg-opacity-15 hover:animate-pulseScale' 
+                className='text-center p-4 w-1/2 flex flex-col items-center rounded-3xl bg-emerald-100 bg-opacity-15 hover:animate-pulseScale' 
                 title='Backtesting Trading' 
                 text='BacktestPro offers a comprehensive backtesting service for trading strategies using the backtesting.py library. Clients can visualize their chosen indicators and simulate buy and sell actions over a selected time period and asset. At the end of the process, a detailed report with various statistics is provided.'
                 image=
@@ -68,7 +68,7 @@ const Container: FC<ContainerProps> = ({className}) => {
                 tecnologies={[{name:'Python',icon: <FaPython className='size-7'/>},{name:'Pandas',icon: <SiPandas className='size-7'/>}]}
             />
             <Project 
-                className='p-4 w-1/2 flex flex-col items-center rounded-3xl bg-emerald-100 bg-opacity-15 hover:animate-pulseScale' 
+                className='text-center p-4 w-1/2 flex flex-col items-center rounded-3xl bg-emerald-100 bg-opacity-15 hover:animate-pulseScale' 
                 title='Software Company' 
                 text='I worked for two years as a full stack developer at Hexacta (a GlobalLogic Company), where I contributed to two projects. I collaborated with a team using agile methodologies to deliver high-quality solutions.'
                 image=
