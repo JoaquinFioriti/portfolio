@@ -9,7 +9,7 @@ interface StackBoxProps {
 
 const StackBox: FC<StackBoxProps> = ({ label, icon, className }) => {
     return (
-        <div className={`flex flex-row  mt-5 p-4 bg-green-200 bg-opacity-20 rounded ${className}`}>
+        <div className={`flex justify-center flex-row  mt-5 p-4 bg-green-200 bg-opacity-20 ${className}`}>
             {label ? label : "ghola"}
             {icon}
         </div>

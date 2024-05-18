@@ -3,9 +3,9 @@ import Head from "next/head";
 import { AiFillLinkedin, AiFillTwitterCircle } from "react-icons/ai";
 import { MdOutlineEngineering } from "react-icons/md";
 import { FaUpwork } from "react-icons/fa6";
-import { FaWhatsapp } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import Container from "@/components/Container";
+
 
 
 

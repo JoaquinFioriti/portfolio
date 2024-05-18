@@ -5,14 +5,17 @@ import { GoChevronDown } from "react-icons/go";
 import StackBox from './StackBox';
 import { FaReact } from "react-icons/fa";
 
-
+interface Tecnology {
+    name?:string,
+    icon?:JSX.Element
+}
 
 
 interface ProjectProps {
     title?:string,
     image?:JSX.Element,
     text?: string,
-    tecnologies?:Array<string>
+    tecnologies?:Tecnology[]
     className?: string
 }
 
@@ -38,19 +41,15 @@ const Container: FC<ProjectProps> = ({title, image, text, tecnologies, className
                 <GoChevronDown onClick={handleButtonClick} className='lg:hidden mt-5 cursor-pointer' size={30}/>
                 <p className={`lg:flex ${isVisible? 'flex' : 'hidden'} text-center text-md py-5 leading-7 text-gray-800`}>{text}</p>
                 </div>
-                <div className='flex flex-row gap-4 flex-wrap'>
-                <StackBox 
-                    label="React"
-                    icon={
-                        <FaReact className='size-7'/>
-                    } 
-                    />
-                <StackBox 
-                    label="React"
-                    icon={
-                        <FaReact className='size-7'/>
-                    } 
-                    />
+                <div className={`lg:flex flex-col gap-4 items-center ${isVisible? 'flex' : 'hidden'}`}>
+                <p className='text-3xl'>Stack</p>
+                <div className='flex lg:flex-row gap-4 flex-wrap flex-col justify-center'>
+                {
+                    tecnologies?.map((tech,index)=>(
+                        <StackBox className='gap-1 rounded-lg ' key={index} label={tech.name} icon={tech.icon}/>
+                    ))
+                }
+                </div>
                 </div>
             </div>
         </div>
