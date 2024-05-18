@@ -55,12 +55,15 @@ const Container: FC<ContainerProps> = ({className}) => {
                 title='Backtesting Trading' 
                 text='BacktestPro offers a comprehensive backtesting service for trading strategies using the backtesting.py library. Clients can visualize their chosen indicators and simulate buy and sell actions over a selected time period and asset. At the end of the process, a detailed report with various statistics is provided.'
                 image=
-                    {<Image 
+                    {
+                    <a href='/projects/backtesting' className='flex justify-center'>
+                    <Image 
                         alt='Backtesting' 
                         src={backtestingIMG} 
                         width="1000" 
                         height="1000" 
                         className='rounded-3xl'/>
+                    </a>
                     }
                 tecnologies={[{name:'Python',icon: <FaPython className='size-7'/>},{name:'Pandas',icon: <SiPandas className='size-7'/>}]}
             />

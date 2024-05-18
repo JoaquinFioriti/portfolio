@@ -31,6 +31,7 @@ export default function Home() {
             </li>
           </ul>
         </nav>
+        <h2 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl">Working on this page xD</h2>
       </section>
       </main>
     </div>
