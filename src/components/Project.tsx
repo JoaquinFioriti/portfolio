@@ -41,12 +41,12 @@ const Container: FC<ProjectProps> = ({title, image, text, tecnologies, className
                 <GoChevronDown onClick={handleButtonClick} className='lg:hidden mt-5 cursor-pointer' size={30}/>
                 <p className={`lg:flex ${isVisible? 'flex' : 'hidden'} text-center text-md py-5 leading-7 text-gray-800`}>{text}</p>
                 </div>
-                <div className={`lg:flex flex-col gap-4 items-center ${isVisible? 'flex' : 'hidden'}`}>
+                <div className={`lg:flex flex-col gap-4 items-center w-full ${isVisible? 'flex' : 'hidden'}`}>
                 <p className='text-3xl'>Stack</p>
-                <div className='flex lg:flex-row gap-4 flex-wrap flex-col justify-center'>
+                <div className='flex lg:flex-row gap-4 flex-wrap flex-col justify-center w-full items-center'>
                 {
                     tecnologies?.map((tech,index)=>(
-                        <StackBox className='gap-1 rounded-lg ' key={index} label={tech.name} icon={tech.icon}/>
+                        <StackBox className='gap-1 rounded-lg w-3/4' key={index} label={tech.name} icon={tech.icon}/>
                     ))
                 }
                 </div>
