@@ -23,7 +23,7 @@ export default function Home() {
           <ul className=" flex items-center">
             <MdOutlineEngineering className="text-3xl "/> {/* TODO: make this size variable depending the device */}
             <li className="hover:scale-125 transition" >
-              <a href="#" className="bg-gradient-to-r from-blue-600 to-blue-400 text-white px-4 py-2 border-none rounded-md ml-8">
+              <a href="/CV_FioritiJoaquin.pdf" target="_blank" rel="noopener noreferrer" className="bg-gradient-to-r from-blue-600 to-blue-400 text-white px-4 py-2 border-none rounded-md ml-8">
                 Resume
               </a>
             </li>
