@@ -46,7 +46,7 @@ const Container: FC<ProjectProps> = ({title, image, text, tecnologies, className
                 <div className='flex lg:flex-row gap-4 flex-wrap flex-col justify-center w-full items-center'>
                 {
                     tecnologies?.map((tech,index)=>(
-                        <StackBox className='gap-1 rounded-lg w-3/4' key={index} label={tech.name} icon={tech.icon}/>
+                        <StackBox className='gap-1 rounded-lg  lg:w-min  w-3/4' key={index} label={tech.name} icon={tech.icon}/>
                     ))
                 }
                 </div>
